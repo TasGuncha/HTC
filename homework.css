@@ -1,0 +1,336 @@
+/* =====================================
+	Students: Guntis Salna
+	Stud. apliec. nr.: gs17025
+	Darbs tika izveidots: 10.11.2017
+	Pēdējās izmaiņas veiktas: 14.11.2017
+===================================== */
+
+/* ========== Fonts ========== */
+@font-face {
+	font-family: 'Roboto';
+	src: url('https://fonts.googleapis.com/css?family=Roboto');
+}
+
+/* ========== Citi parametri ========== */
+h1 {
+	font-size: 180%;
+	color: black;
+	text-transform: capitalize;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h2 {
+	font-size: 140%;
+	color: black;
+	text-transform: capitalize;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h3 {
+	font-size: 120%;
+	color: black;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+}
+
+p {
+	color: black;
+	opacity: 0.6;
+}
+
+a {
+	text-decoration: inherit;
+	color: inherit;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/* ========== Pamats ========== */
+
+body {
+	background-image: url("images/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 150%;
+}
+
+/* ========== Lapas saturs ========== */
+#page-container {
+	max-width: 80%;
+	min-width: 380px;
+	margin: 0px auto;
+}
+
+.top_banner img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+/* ========== Navigācijas panelis ========== */
+#main-menu {
+	background-color: rgba(255, 255, 255, 1);
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+}
+
+.menu {
+	text-transform: uppercase; 
+}
+
+/* ========== Navigācijas paneļa kreisā puse ========== */
+.area-left {
+	float: left;
+}
+
+#htc-menu {
+	width: auto;
+}
+
+.parent-menu {
+	width: inherit;
+}
+
+.menu-icon {
+	height: 20px;
+	float: left;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.menu-icon hr {
+	border: 0;
+	background-color: rgb(165, 207, 76);
+	height: 4px;
+	width: 20px;
+	border-radius: 3px;
+	margin-top: 3px;
+	margin-left: 4px;
+	margin-right: 7px;
+	margin-bottom: 1px;
+}
+
+.logo, .ico-container {
+	margin-top: -2px;
+	position: relative;
+	display: inline-block;
+}
+
+.logo img {
+	width: 60%;
+}
+.sub-menu {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-left: 1px rgba(165, 207, 76, 0.5) solid;
+	border-right: 1px rgba(165, 207, 76, 0.5) solid;
+	border-bottom: 1px rgba(165, 207, 76, 0.5) solid;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+
+.sub-menu li a {
+	padding-top: 2px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 35px;
+	display: block;
+}
+
+.sub-menu li:hover {
+	background-color: rgba(165, 207, 76, 0.5);
+	text-decoration: underline;
+	display: block;
+}
+
+.ico-container:hover + .sub-menu {
+	display: block;
+}
+
+.sub-menu:hover {
+	display: block;
+}
+
+/* ========== Navigācijas paneļa centrālā puse ========== */
+
+.area-center {
+	text-align: center;
+}
+
+.area-center li {
+	display: inline;
+	padding-left: 7px;
+	padding-right: 30px;
+}
+
+.area-center li a:hover {
+	text-decoration: underline;
+}
+
+.selected {
+	text-decoration: none;
+}
+
+.vive {
+	color: rgba(165, 207, 76, 0.9);
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+}
+
+/* ========== Navigācijas paneļa labā puse ========== */
+.area-right {
+	float: right;
+	padding-right: 0.5%;
+}
+
+.order {
+	color: rgba(165, 207, 76, 0.9);
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+}
+
+.order:hover {
+	text-decoration: underline;
+}
+
+/* ========== Saturs, galvenā informācija ========== */
+.main-container {
+	background-color: rgba(255, 255, 255, 0.7);
+    padding-top: 2%;
+    padding-right: 4.5%;
+	padding-left: 4.5%;
+    padding-bottom: 2%;
+}
+
+/* section tika izmantots daudzās vietās; parametri nemainās */
+.section {
+	margin-bottom: 10px;
+}
+
+.ultra-img img {
+	width: 320px;
+	height: auto;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.lead {
+	color: rgba(0, 0, 0, 0.9);
+	font-weight: bold;
+	font-size: 110%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.ad div  {
+	display: inline;
+	width: 8.5%;
+	overflow: visible;
+	
+}
+#ad-img  {
+	width: 8.5%;
+	float: left;
+	margin-right: 10px;
+	margin-top: 17px;
+	position: relative;
+}
+
+.ad-text {
+	display: block;
+	background-color: rgba(165, 207, 76, 0.95);
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;	
+	float: left;
+	clear: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 10px;
+	margin-bottom: -25px;
+	width: inherit;
+	bottom: 25px;
+}
+
+.spec-container {
+	background-color: rgba(255, 255, 255, 0.7);
+	float: left;
+    padding-top: 4%;
+	padding-left: 9%;
+    padding-right: 12%;
+    padding-bottom: 4%;
+}
+
+.specs {
+	word-wrap: break-word;
+	float: left;
+	line-height: 175%;
+	width: 25%;
+	padding-top: 2%;
+	padding-right: 7%;
+}
+
+.specs li{
+	color: black;
+	opacity: 0.6;
+}
+
+.clear {
+	clear: left;
+}
+
+/* ========== Lapas apakšējā daļa ========== */
+.menu-bottom {
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 1px;
+	clear: left;
+	text-align: center;
+}
+
+.menu-bottom li {
+	display: inline;
+}
+
+.menu-bottom li:before {
+	content: "|";
+	padding-right: 6px;
+	padding-left: 0px;
+}
+
+/* ========== Autortiesības ========== */
+#copyright {
+	text-align: center;
+	font-size: 75%;
+	color: rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* ========== Feedback ========== */
+#feedback img {
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 148px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	
+}
+
+#feedback :hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
